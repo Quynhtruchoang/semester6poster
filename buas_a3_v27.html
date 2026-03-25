@@ -1,0 +1,189 @@
+
+<div style="font-family: var(--font-sans); width: 794px; margin: 0 auto; background: var(--color-background-primary);">
+
+  <div style="background: #E87722; padding: 0.8rem 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;">
+    <div style="flex:1;">
+      <p style="color: white; font-size: 9px; margin: 0 0 3px; opacity: 0.85; letter-spacing: 0.07em; text-transform: uppercase;">Logistics Engineering - Semester 6 - 2026</p>
+      <h1 style="color: white; font-size: 17px; font-weight: 500; margin: 0; line-height: 1.3;">Can AI-based forecasting reduce empty container movements?</h1>
+    </div>
+    <div style="flex-shrink: 0; background: white; border-radius: 6px; padding: 6px 10px; display: flex; align-items: center;">
+      <img src="https://www.buas.nl/sites/default/files/2018-09/Logo%20BUas_RGB.jpg" alt="BUas Logo" style="height: 48px; width: auto; display: block;"/>
+    </div>
+  </div>
+
+  <div style="background: var(--color-background-secondary); padding: 0.6rem 1.5rem; border-left: 0.5px solid var(--color-border-tertiary); border-right: 0.5px solid var(--color-border-tertiary);">
+    <p style="font-size: 9px; font-weight: 500; color: #E87722; text-transform: uppercase; letter-spacing: 0.07em; margin: 0 0 3px;">Hypothesis</p>
+    <p style="font-size: 11px; color: var(--color-text-primary); margin: 0; font-style: italic; text-align: center; line-height: 1.5;">"Applying an AI-based demand forecasting model to historical shipment data reduces the number of unplanned empty container repositioning trips compared to planning without forecasting."</p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; border: 0.5px solid var(--color-border-tertiary); border-top: none; border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg); overflow: hidden;">
+
+    <!-- COL 1: Introduction + Motivation -->
+    <div style="padding: 0.9rem; border-right: 0.5px solid var(--color-border-tertiary); display: flex; flex-direction: column; gap: 0.65rem;">
+      <div>
+        <p style="font-size: 9px; font-weight: 500; color: #E87722; text-transform: uppercase; letter-spacing: 0.07em; margin: 0 0 5px; padding-bottom: 3px; border-bottom: 2px solid #E87722;">Introduction</p>
+        <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 0.9rem; text-align: center; margin-bottom: 8px; border: 0.5px solid var(--color-border-tertiary);">
+          <p style="font-size: 44px; font-weight: 500; color: #E87722; margin: 0; line-height: 1;">40%</p>
+          <p style="font-size: 11px; color: var(--color-text-primary); margin: 4px 0 0; line-height: 1.5;">of all container movements are<br><strong style="color: #E87722;">completely empty.</strong></p>
+          <div style="margin: 8px auto 0; width: 85%; height: 10px; background: #1a3a5c; border-radius: 99px; overflow: hidden;">
+            <div style="width: 40%; height: 100%; background: #E87722; border-radius: 99px;"></div>
+          </div>
+          <div style="display: flex; justify-content: space-between; width: 85%; margin: 3px auto 0;">
+            <p style="font-size: 8px; color: #E87722; margin: 0; font-weight: 500;">Empty 40%</p>
+            <p style="font-size: 8px; color: #1a3a5c; margin: 0; font-weight: 500;">Loaded 60%</p>
+          </div>
+          <p style="font-size: 9px; color: var(--color-text-secondary); margin: 7px 0 0; line-height: 1.4;">Zero revenue. Full cost. Every single day.</p>
+          <div style="border-top: 0.5px solid var(--color-border-tertiary); margin: 7px 0 0; padding-top: 7px;">
+            <p style="font-size: 10px; color: var(--color-text-primary); margin: 0; font-style: italic;">"What if we could predict this before it happens?"</p>
+          </div>
+        </div>
+        <p style="font-size: 10px; color: var(--color-text-primary); line-height: 1.6; margin: 0;">This research explores how AI-based forecasting reduces empty container movements using a simulation on real industry data.</p>
+      </div>
+
+      <div>
+        <p style="font-size: 9px; font-weight: 500; color: #E87722; text-transform: uppercase; letter-spacing: 0.07em; margin: 0 0 5px; padding-bottom: 3px; border-bottom: 2px solid #E87722;">Motivation</p>
+        <p style="font-size: 10px; color: var(--color-text-primary); line-height: 1.6; margin: 0;">This research is motivated by a clear gap between vision and practice. While the Physical Internet establishes a framework for intelligent logistics built on shared data, the application of AI forecasting as a concrete step toward that vision remains untested in the context of empty container management.</p>
+      </div>
+    </div>
+
+    <!-- COL 2: Objective + Data + Key insights -->
+    <div style="padding: 0.9rem; border-right: 0.5px solid var(--color-border-tertiary); display: flex; flex-direction: column; gap: 0.65rem;">
+      <div>
+        <p style="font-size: 9px; font-weight: 500; color: #E87722; text-transform: uppercase; letter-spacing: 0.07em; margin: 0 0 5px; padding-bottom: 3px; border-bottom: 2px solid #E87722;">Objective</p>
+        <p style="font-size: 10px; color: var(--color-text-primary); line-height: 1.6; margin: 0;">To simulate the impact of AI-based forecasting on empty container movements using real industry shipment data, measuring the reduction in unplanned repositioning trips compared to planning without forecasting, with the aim of demonstrating its operational value for logistics companies.</p>
+      </div>
+
+      <div>
+        <p style="font-size: 9px; font-weight: 500; color: #E87722; text-transform: uppercase; letter-spacing: 0.07em; margin: 0 0 5px; padding-bottom: 3px; border-bottom: 2px solid #E87722;">Data - EU container volume 2009-2024</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 8px;">
+          <div style="background: #E87722; border-radius: var(--border-radius-md); padding: 6px; text-align: center;">
+            <p style="font-size: 15px; font-weight: 500; color: white; margin: 0;">100.9M</p>
+            <p style="font-size: 9px; color: white; margin: 1px 0 0; opacity: 0.9;">TEUs in EU (2024)</p>
+          </div>
+          <div style="background: #E87722; border-radius: var(--border-radius-md); padding: 6px; text-align: center;">
+            <p style="font-size: 15px; font-weight: 500; color: white; margin: 0;">+5.5% Empty</p>
+            <p style="font-size: 9px; color: white; margin: 1px 0 0; opacity: 0.9;">vs +4.1% loaded</p>
+          </div>
+        </div>
+        <div style="position: relative; height: 150px;">
+          <canvas id="a3chart"></canvas>
+        </div>
+        <p style="font-size: 9px; color: var(--color-text-secondary); margin: 2px 0 0; text-align: right;">Source: Eurostat, mar_mg_am_cvh</p>
+      </div>
+
+      <div>
+        <p style="font-size: 9px; font-weight: 500; color: #E87722; text-transform: uppercase; letter-spacing: 0.07em; margin: 0 0 5px; padding-bottom: 3px; border-bottom: 2px solid #E87722;">Key insights</p>
+        <div style="display: flex; flex-direction: column; gap: 5px;">
+          <p style="font-size: 10px; color: var(--color-text-primary); line-height: 1.6; margin: 0;">In 2024, empty container volumes grew faster than loaded ones, meaning more ships are moving with nothing inside than ever before <span style="color: #E87722;">(Eurostat, 2024).</span></p>
+          <p style="font-size: 10px; color: var(--color-text-primary); line-height: 1.6; margin: 0;">Every time a container is moved empty, the shipping company pays the full transport cost but earns nothing in return, making it one of the biggest financial losses in the industry <span style="color: #E87722;">(Xu et al., 2024).</span></p>
+          <p style="font-size: 10px; color: var(--color-text-primary); line-height: 1.6; margin: 0;">The most critical AI solutions in ports rely on machine learning techniques, showing that AI is no longer experimental but an industry-ready tool <span style="color: #E87722;">(Farzadmehr et al., 2023).</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- COL 3: Method + Who am I looking for + References + QR -->
+    <div style="padding: 0.9rem; display: flex; flex-direction: column; gap: 0.65rem;">
+      <div>
+        <p style="font-size: 9px; font-weight: 500; color: #E87722; text-transform: uppercase; letter-spacing: 0.07em; margin: 0 0 5px; padding-bottom: 3px; border-bottom: 2px solid #E87722;">Method - Simulation</p>
+        <div style="display: flex; flex-direction: column; gap: 5px;">
+          <div style="display: flex; gap: 7px; align-items: flex-start;">
+            <div style="width: 17px; height: 17px; border-radius: 50%; background: #E87722; color: white; font-size: 9px; font-weight: 500; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <p style="font-size: 10px; margin: 0; color: var(--color-text-primary); line-height: 1.5;">Collect industry data<br><span style="font-size: 9px; color: var(--color-text-secondary);">Historical shipment data from industry partners</span></p>
+          </div>
+          <div style="display: flex; gap: 7px; align-items: flex-start;">
+            <div style="width: 17px; height: 17px; border-radius: 50%; background: #E87722; color: white; font-size: 9px; font-weight: 500; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <p style="font-size: 10px; margin: 0; color: var(--color-text-primary); line-height: 1.5;">Count baseline empty trips<br><span style="font-size: 9px; color: var(--color-text-secondary);">Without any forecasting applied</span></p>
+          </div>
+          <div style="display: flex; gap: 7px; align-items: flex-start;">
+            <div style="width: 17px; height: 17px; border-radius: 50%; background: #E87722; color: white; font-size: 9px; font-weight: 500; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <p style="font-size: 10px; margin: 0; color: var(--color-text-primary); line-height: 1.5;">Apply AI forecasting model<br><span style="font-size: 9px; color: var(--color-text-secondary);">Predict empty container accumulation</span></p>
+          </div>
+          <div style="display: flex; gap: 7px; align-items: flex-start;">
+            <div style="width: 17px; height: 17px; border-radius: 50%; background: #E87722; color: white; font-size: 9px; font-weight: 500; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
+            <p style="font-size: 10px; margin: 0; color: var(--color-text-primary); line-height: 1.5;">Compare before vs after<br><span style="font-size: 9px; color: var(--color-text-secondary);">Measure reduction in empty trips</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 0.6rem; text-align: center;">
+        <p style="font-size: 14px; font-weight: 500; color: #E87722; margin: 0;">X to Y</p>
+        <p style="font-size: 9px; color: var(--color-text-secondary); margin: 2px 0 0;">Empty trips before to after forecasting</p>
+        <p style="font-size: 9px; color: #E87722; margin: 2px 0 0; font-weight: 500;">If Y &lt; X, hypothesis supported</p>
+      </div>
+
+      <!-- WHO AM I LOOKING FOR moved here -->
+      <div>
+        <p style="font-size: 9px; font-weight: 500; color: #E87722; text-transform: uppercase; letter-spacing: 0.07em; margin: 0 0 5px; padding-bottom: 3px; border-bottom: 2px solid #E87722;">Who am I looking for?</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5px;">
+          <div style="background: #1a3a5c; border-radius: 6px; padding: 6px 8px;">
+            <p style="font-size: 10px; font-weight: 500; color: white; margin: 0;">Freight forwarders</p>
+          </div>
+          <div style="background: #1a3a5c; border-radius: 6px; padding: 6px 8px;">
+            <p style="font-size: 10px; font-weight: 500; color: white; margin: 0;">Shipping lines</p>
+          </div>
+          <div style="background: #1a3a5c; border-radius: 6px; padding: 6px 8px;">
+            <p style="font-size: 10px; font-weight: 500; color: white; margin: 0;">LSPs</p>
+          </div>
+          <div style="background: #1a3a5c; border-radius: 6px; padding: 6px 8px;">
+            <p style="font-size: 10px; font-weight: 500; color: white; margin: 0;">Terminal operators</p>
+          </div>
+        </div>
+        <div style="background: #E87722; border-radius: var(--border-radius-md); padding: 7px 10px; margin-top: 6px;">
+          <p style="font-size: 9px; color: white; margin: 0; line-height: 1.5;">Data needed: date, container type, full/empty, route. Anonymised welcome.</p>
+        </div>
+      </div>
+
+      <div>
+        <p style="font-size: 9px; font-weight: 500; color: #E87722; text-transform: uppercase; letter-spacing: 0.07em; margin: 0 0 4px; padding-bottom: 3px; border-bottom: 2px solid #E87722;">References</p>
+        <div style="display: flex; flex-direction: column; gap: 2px;">
+          <p style="font-size: 9px; color: var(--color-text-secondary); margin: 0; line-height: 1.4;">Braekers et al. (2011). <em>Transport Reviews</em>, 31(6).</p>
+          <p style="font-size: 9px; color: var(--color-text-secondary); margin: 0; line-height: 1.4;">Farzadmehr et al. (2023). <em>Journal of Shipping and Trade</em>, 8.</p>
+          <p style="font-size: 9px; color: var(--color-text-secondary); margin: 0; line-height: 1.4;">Xu et al. (2024). <em>Maritime Policy and Management</em>, 51(8).</p>
+          <p style="font-size: 9px; color: var(--color-text-secondary); margin: 0; line-height: 1.4;">Martius et al. (2022). <em>Journal of Shipping and Trade</em>, 7(1).</p>
+          <p style="font-size: 9px; color: var(--color-text-secondary); margin: 0; line-height: 1.4;">Foahom Gouabou et al. (2024). <em>arXiv:2503.11728</em>.</p>
+          <p style="font-size: 9px; color: var(--color-text-secondary); margin: 0; line-height: 1.4;">Zugno et al. (2025). <em>Foresight</em>, 79.</p>
+          <p style="font-size: 9px; color: var(--color-text-secondary); margin: 0; line-height: 1.4;">Eurostat (2024). <em>mar_mg_am_cvh</em>.</p>
+        </div>
+      </div>
+
+      <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 0.7rem; display: flex; align-items: center; gap: 10px; margin-top: auto; border: 0.5px solid var(--color-border-tertiary);">
+        <div id="qrcode" style="flex-shrink: 0;"></div>
+        <div>
+          <p style="font-size: 10px; font-weight: 500; color: var(--color-text-primary); margin: 0;">Quynh Hoang</p>
+          <p style="font-size: 9px; color: var(--color-text-secondary); margin: 2px 0 0;">Scan for contact details and research data collection plan</p>
+          <p style="font-size: 9px; color: #E87722; margin: 4px 0 0;">linkedin.com/in/quynh-hoang</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+new Chart(document.getElementById('a3chart').getContext('2d'), {
+  type: 'line',
+  data: {
+    labels: ['2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020','2021','2022','2023','2024'],
+    datasets: [
+      { label: 'Total', data: [62,67,72,76,78,84,84,86,91,99,98,93,96,98,97,101], borderColor: '#1a3a5c', borderWidth: 1.5, pointRadius: 1.5, tension: 0.3, backgroundColor: 'transparent' },
+      { label: 'Empty', data: [9,10,11,11,11,12,13,13,14,15,15,14,15,16,17,18], borderColor: '#E87722', borderWidth: 2.5, pointRadius: 2.5, tension: 0.3, backgroundColor: 'transparent' },
+      { label: 'Loaded', data: [50,54,58,61,63,67,67,69,73,80,80,76,84,80,79,82], borderColor: '#888', borderWidth: 1.5, pointRadius: 1.5, tension: 0.3, backgroundColor: 'transparent' }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position: 'bottom', labels: { boxWidth: 8, font: { size: 9 }, padding: 6 } } },
+    scales: {
+      y: { ticks: { font: { size: 9 } }, grid: { color: 'rgba(0,0,0,0.04)' }, title: { display: true, text: 'M TEUs', font: { size: 9 } } },
+      x: { ticks: { font: { size: 9 }, maxRotation: 45 }, grid: { display: false } }
+    }
+  }
+});
+new QRCode(document.getElementById('qrcode'), {
+  text: 'https://www.linkedin.com/in/quynh-hoang-9676b3291/',
+  width: 64, height: 64,
+  colorDark: '#1a3a5c', colorLight: '#ffffff',
+  correctLevel: QRCode.CorrectLevel.M
+});
+</script>
